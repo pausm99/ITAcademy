@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------------*/
+/* GENERAL CONFIG */
+#page-wrapper {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    background-color: black;
+    padding: 20px;
+}
+
+.split {
+    padding: 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.item {
+    height: 20px;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+/*-------------------------*/
+/* COLOURS */
+.red {
+    background-color: rgb(217, 95, 91);
+}
+
+.orange {
+    background-color: rgb(247, 214, 105);
+}
+
+.darkBlue {
+    background-color: rgb(55, 106, 171);
+}
+
+.lightBlue {
+    background-color: lightblue;
+}
+
+.yellow {
+    background-color: rgb(251, 234, 146);
+}
+
+
+
+/*-------------------------*/
+/* CONTAINER 1 */
+#container1 {
+    flex-direction: column;
+}
+
+#split1A {
+    flex-direction: row;
+    background-color: rgb(49,64,87);
+    margin-bottom: 10px;
+}
+
+.red {
+    flex-basis: 25%;
+}
+
+.red:nth-of-type(2) {
+    flex-basis: auto;
+}
+
+#split1B {
+    flex-direction: row;
+    background-color: rgb(224,129,77);
+}
+
+
+/*-------------------------*/
+/* CONTAINER 2 */
+#split2A {
+    background-color: rgb(78,79,104);
+    flex: 2;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+#split2A .item {
+    flex-basis: calc(50% - 10px);
+}
+
+#split2A .item:last-of-type {
+    flex-basis: 100%;
+}
+
+#split2B {
+    flex-direction: column;
+    background-color: rgb(228,79,87);
+    flex: 1;
+}
+
+/*-------------------------*/
+/* CONTAINER 3 */
+#split3A {
+    background-color: rgb(221,177,74);
+    padding: 10px;
+}
