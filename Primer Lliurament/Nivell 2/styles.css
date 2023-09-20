@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+/*-------------------------*/
+/* GENERAL CONFIG */
+#page-wrapper {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    min-width: 25rem;
+}
+
+.container {
+    background-color: black;
+    padding: 1.25rem;
+}
+
+.split {
+    padding: 1.25rem;
+    width: 100%;
+    gap: 1.25rem;
+}
+
+.item {
+    height: 1.25rem;
+}
+
+.flex {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-------------------------*/
+/* COLOURS */
+
+
+.item3 {
+    background-color: rgb(55, 106, 171);
+}
+
+.item4 {
+    background-color: lightblue;
+}
+
+.item5 {
+    background-color: rgb(251, 234, 146);
+}
+
+
+
+/*-------------------------*/
+/* HEADER */
+#container1 {
+    flex-direction: column;
+    padding: 0;
+    gap: 6.25rem;
+    background: url(images/header.jpg) no-repeat center center;
+}
+
+#split1A {
+    flex-direction: row;
+    align-items: center;
+    color: rgb(128, 128, 128);
+}
+
+.item1 {
+    flex: 1;
+}
+
+.item1:nth-child(2) {
+    flex-basis: 75%;
+}
+
+#split1B {
+    flex-direction: row;
+}
+
+#container1 .item {
+    height: auto;
+}
+
+#logo {
+    max-height: 5.3rem;
+    width: auto;
+}
+
+#navbar {
+    justify-content: space-evenly;
+}
+
+.navbar-item {
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+#div-social {
+    gap: 1.25rem;
+}
+
+#div-social * {
+    cursor: pointer;
+}
+
+.navbar-item:hover, #div-social *:hover {
+    transform: scale(1.1);
+}
+
+#split1B {
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(178, 173, 173, 0.35);
+    padding-top: 1.6rem;
+    padding-bottom: 3.4rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.item2 {
+    color: rgba(235, 143, 104, 0.9);
+    font-weight: normal;
+    font-size: 1.8rem;
+    font-family: serif;
+    text-align: center;
+}
+
+/*-------------------------*/
+/* CONTAINER 2 */
+#split2A {
+    background-color: rgb(78,79,104);
+    flex: 2;
+    flex-wrap: wrap;
+    margin-right: 1.25rem;
+}
+
+#split2A .item {
+    flex-basis: calc(50% - 10px);
+}
+
+#split2A .item:last-of-type {
+    flex-basis: 100%;
+}
+
+#split2B {
+    flex-direction: column;
+    background-color: rgb(228,79,87);
+    flex: 1;
+}
+
+
+
+/*-------------------------*/
+/* CONTAINER 3 */
+#split3A {
+    background-color: rgb(221,177,74);
+    padding: 0.625rem;
+}
+
+
+
+/*-------------------------*/
+/* MEDIA QUERIES */  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    #page-wrapper {
+        padding: 0;
+    }
+
+    #logo {
+        max-height: 4rem;
+    }
+    
+    #container2 {
+        background-color: yellow;
+        flex-direction: column;
+    }
+
+    #split2A {
+        margin-right: 0;
+        margin-bottom: 1.25rem;
+    }
+
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    #page-wrapper {
+        padding: 0;
+    }
+
+    #logo {
+        max-height: 4rem;
+    }
+    
+    #container2 {
+        background-color: yellow;
+        flex-direction: column;
+    }
+
+    #split2A {
+        margin-right: 0;
+        margin-bottom: 1.25rem;
+    }
+    
+  }
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    #page-wrapper {
+        padding: 0;
+    }
+
+    #split1A {
+        margin-bottom: 1.25rem;
+        flex-direction: column;
+    }
+
+    .item1 {
+        flex-basis: auto;
+        font-size: 0.875rem;
+    }
+
+    #logo {
+        max-height: 4rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #navbar {
+        gap: 0.9rem;
+    }
+
+    .item2 {
+        font-size: 1.375rem;
+    }
+  
+    #container2 {
+        background-color: yellow;
+        flex-direction: column;
+    }
+
+    #split2A {
+        margin-right: 0;
+        margin-bottom: 1.25rem;
+    }
+
+    #split2A .item {
+        flex-basis: 100%;
+    }
+    
+  }
+
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    #page-wrapper {
+        padding: 0;
+    }
+
+    #split1A {
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .item1 {
+        flex-basis: auto;
+        font-size: 12px;
+    }
+
+    #logo {
+        max-height: 55px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #navbar {
+        gap: 15px;
+    }
+
+    .item2 {
+        font-size: 20px;
+    }
+
+    #container2 {
+        background-color: yellow;
+        flex-direction: column;
+    }
+
+    #split2A {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    
+    #split2A .item {
+        flex-basis: 100%;
+    }
+    
+  }
+
+  /* 
+    ##Device = Rest of the screens (Small)
+    ##Screen = Below 320px
+  */
+  @media (max-width: 319px) {
+
+    #page-wrapper {
+        padding: 0;
+    }
+
+    #split1A {
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .item1 {
+        flex-basis: auto;
+        font-size: 12px;
+    }
+
+    #logo {
+        max-height: 55px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #navbar {
+        gap: 15px;
+    }
+
+    .item2 {
+        font-size: 20px;
+    }
+
+    #container2 {
+        background-color: yellow;
+        flex-direction: column;
+    }
+
+    #split2A {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    
+    #split2A .item {
+        flex-basis: 100%;
+    }
+    
+  }
