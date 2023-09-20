@@ -108,9 +108,52 @@
     flex: 1;
 }
 
+
+
 /*-------------------------*/
 /* CONTAINER 3 */
 #split3A {
     background-color: rgb(221,177,74);
     padding: 10px;
 }
+
+
+
+/*-------------------------*/
+/* MEDIA QUERIES */  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    #container2 {
+        background-color: yellow;
+        flex-direction: column;
+    }
+
+    #split2A {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    #container2 {
+        background-color: yellow;
+        flex-direction: column;
+    }
+
+    #split2A {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+  }
