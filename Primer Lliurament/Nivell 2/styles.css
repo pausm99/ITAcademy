@@ -14,25 +14,16 @@ html {
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 0.625rem;
     margin: 0 auto;
-    padding: 1.25rem;
     min-width: 25rem;
-}
-
-.container {
-    background-color: black;
-    padding: 1.25rem;
+    padding-bottom: 0.5rem;
 }
 
 .split {
-    padding: 1.25rem;
+    padding: 0.625rem;
     width: 100%;
     gap: 1.25rem;
-}
-
-.item {
-    height: 1.25rem;
 }
 
 .flex {
@@ -47,22 +38,9 @@ a {
     text-decoration: none;
 }
 
-/*-------------------------*/
-/* COLOURS */
-
-
-.item3 {
-    background-color: rgb(55, 106, 171);
+#container2 .split, #container3 {
+    background-color: rgb(216, 215, 215);
 }
-
-.item4 {
-    background-color: lightblue;
-}
-
-.item5 {
-    background-color: rgb(251, 234, 146);
-}
-
 
 
 /*-------------------------*/
@@ -72,6 +50,10 @@ a {
     padding: 0;
     gap: 6.25rem;
     background: url(images/header.jpg) no-repeat center center;
+}
+
+#container1 .split {
+    padding: 1.25rem;
 }
 
 #split1A {
@@ -126,8 +108,8 @@ a {
     justify-content: center;
     align-items: flex-start;
     background-color: rgba(178, 173, 173, 0.35);
-    padding-top: 1.6rem;
-    padding-bottom: 3.4rem;
+    padding-top: 1.6rem imo !important;
+    padding-bottom: 3.4rem !important;
     width: 90%;
     margin: 0 auto;
 }
@@ -142,36 +124,101 @@ a {
 
 /*-------------------------*/
 /* CONTAINER 2 */
+#container2 {
+    padding: 0;
+}
+
 #split2A {
-    background-color: rgb(78,79,104);
-    flex: 2;
+    flex: 3;
     flex-wrap: wrap;
-    margin-right: 1.25rem;
+    margin-right: 0.625rem;
 }
 
 #split2A .item {
     flex-basis: calc(50% - 10px);
 }
 
-#split2A .item:last-of-type {
+#split2A .item4:last-of-type {
     flex-basis: 100%;
+}
+
+article {
+    padding: 0.625rem;
+    flex-direction: column;
+    background-color: rgb(244, 241, 241);
+}
+
+.article-figure {
+    position: relative;
+}
+
+.figure-image {
+    height: auto;
+    width: 100%;
+}
+
+.figure-date {
+    position: absolute;
+    bottom: 6px;
+    left: 5px;
+    color: rgb(222, 200, 125);
+}
+
+.article-body {
+    flex-direction: column;
+}
+
+.article-title {
+    background-color: rgb(225, 134, 131);
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 10px 5px 3px 5px;
+}
+
+.article-text {
+    column-count: 2;
+    column-gap: 1.1rem;
+    padding: 1.25rem 5px;
+    color: rgb(94,94,94);
+}
+
+.read-more {
+    color: rgb(139, 138, 138);
+    padding: 0 5px;
+}
+
+#article-summary {
+    text-align: center;
+    padding: 0 0.6rem;
 }
 
 #split2B {
     flex-direction: column;
-    background-color: rgb(228,79,87);
     flex: 1;
+    text-align: center;
 }
 
+#aside-title {
+    margin-top: 1.875rem;
+    font-size: 1.5rem;
+}
 
+#aside-text {
+    margin-bottom: 1rem;
+}
 
 /*-------------------------*/
 /* CONTAINER 3 */
-#split3A {
-    background-color: rgb(221,177,74);
-    padding: 0.625rem;
+#container3 {
+    padding: 0 0.625rem;
 }
 
+#split3A {
+    background-color: rgb(244, 241, 241);
+    text-align: center;
+    color: rgb(94,94,94);
+}
 
 
 /*-------------------------*/
@@ -191,7 +238,6 @@ a {
     }
     
     #container2 {
-        background-color: yellow;
         flex-direction: column;
     }
 
@@ -218,13 +264,12 @@ a {
     }
     
     #container2 {
-        background-color: yellow;
         flex-direction: column;
     }
 
     #split2A {
         margin-right: 0;
-        margin-bottom: 1.25rem;
+        margin-bottom: 0.625rem;
     }
     
   }
@@ -267,7 +312,6 @@ a {
     }
   
     #container2 {
-        background-color: yellow;
         flex-direction: column;
     }
 
@@ -321,7 +365,6 @@ a {
     }
 
     #container2 {
-        background-color: yellow;
         flex-direction: column;
     }
 
@@ -373,7 +416,6 @@ a {
     }
 
     #container2 {
-        background-color: yellow;
         flex-direction: column;
     }
 
